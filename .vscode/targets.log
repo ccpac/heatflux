@@ -1,0 +1,524 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jul 14 17:23:52 2022
+
+# Variables
+
+# makefile (from 'makefile', line 8)
+OBJ = main.o modelo_completo.o
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# makefile (from 'makefile', line 7)
+SRC = main.f90 modelo_completo.f90
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+CMAKE_PREFIX_PATH = /home/cesar/intel/oneapi/tbb/2021.5.0/env/..:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/IntelDPCPP
+# makefile (from 'makefile', line 2)
+FFLAGS = -g 
+# environment
+LINK_FNL_SHARED = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8d081771-774a-43b9-be0e-eb2b659008d4.sock
+# environment
+CCL_ROOT = /home/cesar/intel/oneapi/ccl/2021.5.0
+# environment
+LC_NAME = pt_BR.UTF-8
+# environment
+LC_NUMERIC = en_US.UTF-8
+# environment
+LINK_F90_SHARED_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+VSCODE_CWD = /home/cesar
+# environment
+CMPLR_ROOT = /home/cesar/intel/oneapi/compiler/2022.0.1
+# environment
+FNL_OS_VERSION = Red Hat Enterprise Linux Server release 8.0 (Ootpa)
+# environment
+INSPECTOR_2022_DIR = /home/cesar/intel/oneapi/inspector/2022.0.0
+# environment
+LC_ADDRESS = pt_BR.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+F90 = ifort
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+LINK_FNL_SHARED_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+PWD = /home/cesar/Documents/UFF/estudos/heatflux/welding/src
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+PS1 = \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/cesar/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Q2WSO1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# environment
+LINK_MPIS = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_s -limsllapack_vendor -limslblas_vendor -limsls_err -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64 -Wl,--end-group -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+PKG_CONFIG_PATH = /home/cesar/intel/oneapi/vtune/2022.0.0/include/pkgconfig/lib64:/home/cesar/intel/oneapi/tbb/2021.5.0/env/../lib/pkgconfig:/home/cesar/intel/oneapi/mpi/2021.5.0/lib/pkgconfig:/home/cesar/intel/oneapi/mkl/2022.0.1/lib/pkgconfig:/home/cesar/intel/oneapi/ippcp/2021.5.0/lib/pkgconfig:/home/cesar/intel/oneapi/inspector/2022.0.0/include/pkgconfig/lib64:/home/cesar/intel/oneapi/dpl/2021.6.0/lib/pkgconfig:/home/cesar/intel/oneapi/dnnl/2022.0.1/cpu_dpcpp_gpu_dpcpp/../lib/pkgconfig:/home/cesar/intel/oneapi/compiler/2022.0.1/lib/pkgconfig:/home/cesar/intel/oneapi/ccl/2021.5.0/lib/pkgconfig:/home/cesar/intel/oneapi/advisor/2022.0.0/include/pkgconfig/lib64:
+# environment
+DPL_ROOT = /home/cesar/intel/oneapi/dpl/2021.6.0
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=10a2bbf18cbde2f8711cca1062cffaf6
+# makefile
+CURDIR := /home/cesar/Documents/UFF/estudos/heatflux/welding/src
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'makefile', line 1)
+MAKEFILE_LIST := makefile
+# environment
+LINK_MPIS_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_s -limsllapack_vendor -limslblas_vendor -limsls_err -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64 -Wl,--end-group -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 30554
+# environment
+FNL_DIR = /opt/RogueWave/imsl/fnl-2021.0.0
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+DPCT_BUNDLE_ROOT = /home/cesar/intel/oneapi/dpcpp-ct/2022.0.0
+# environment
+SESSION_MANAGER = local/thinkpad:@/tmp/.ICE-unix/1832,unix/thinkpad:/tmp/.ICE-unix/1832
+# automatic
+*F = $(notdir $*)
+# environment
+VT_LIB_DIR = /home/cesar/intel/oneapi/itac/2021.5.0/lib
+# environment
+MANPATH = /home/cesar/intel/oneapi/mpi/2021.5.0/man:/home/cesar/intel/oneapi/itac/2021.5.0/man:/home/cesar/intel/oneapi/debugger/2021.5.0/documentation/man:/home/cesar/intel/oneapi/compiler/2022.0.1/documentation/en/man/common:/home/cesar/intel/oneapi/clck/2021.5.0/man::
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=10a2bbf18cbde2f8711cca1062cffaf6
+# environment
+INSIDE_NAUTILUS_PYTHON = 
+# environment
+FNL_EXAMPLES = /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/examples
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'makefile', line 5)
+EXEC = welding
+# environment
+FI_PROVIDER_PATH = /home/cesar/intel/oneapi/mpi/2021.5.0//libfabric/lib/prov:/usr/lib64/libfabric
+# environment
+VTUNE_PROFILER_2022_DIR = /home/cesar/intel/oneapi/vtune/2022.0.0
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+CCL_CONFIGURATION = cpu_gpu_dpcpp
+# environment
+CLCK_ROOT = /home/cesar/intel/oneapi/clck/2021.5.0
+# environment
+ONEAPI_ROOT = /home/cesar/intel/oneapi
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# environment
+INFOPATH = /home/cesar/intel/oneapi/debugger/2021.5.0/gdb/intel64/lib
+# makefile
+SHELL = /bin/sh
+# environment
+IPPCP_TARGET_ARCH = intel64
+# environment
+CLASSPATH = /home/cesar/intel/oneapi/mpi/2021.5.0//lib/mpi.jar
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+LD_LIBRARY_PATH = /home/cesar/intel/oneapi/tbb/2021.5.0/env/../lib/intel64/gcc4.8:/home/cesar/intel/oneapi/mpi/2021.5.0//libfabric/lib:/home/cesar/intel/oneapi/mpi/2021.5.0//lib/release:/home/cesar/intel/oneapi/mpi/2021.5.0//lib:/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64:/home/cesar/intel/oneapi/itac/2021.5.0/slib:/home/cesar/intel/oneapi/ipp/2021.5.1/lib/intel64:/home/cesar/intel/oneapi/ippcp/2021.5.0/lib/intel64:/home/cesar/intel/oneapi/ipp/2021.5.1/lib/intel64:/home/cesar/intel/oneapi/dnnl/2022.0.1/cpu_dpcpp_gpu_dpcpp/lib:/home/cesar/intel/oneapi/debugger/2021.5.0/gdb/intel64/lib:/home/cesar/intel/oneapi/debugger/2021.5.0/libipt/intel64/lib:/home/cesar/intel/oneapi/debugger/2021.5.0/dep/lib:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib/x64:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib/oclfpga/host/linux64/lib:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/compiler/lib/intel64_lin:/home/cesar/intel/oneapi/ccl/2021.5.0/lib/cpu_gpu_dpcpp
+# environment
+VT_ROOT = /home/cesar/intel/oneapi/itac/2021.5.0
+# environment
+SHLVL = 0
+# environment
+MPIF90 = mpif90
+# environment
+LINK_MPI_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_s -limsllapack_vendor -limslblas_vendor -limslp_err -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64 -Wl,--end-group -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+MAKELEVEL := 0
+# environment
+IPPCRYPTOROOT = /home/cesar/intel/oneapi/ippcp/2021.5.0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# environment
+NLSPATH = /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64/locale/%l_%t/%N:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/compiler/lib/intel64_lin/locale/%l_%t/%N
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from 'makefile', line 1)
+FC = ifort
+# environment
+PATH = /home/cesar/.local/bin:/home/cesar/intel/oneapi/vtune/2022.0.0/bin64:/home/cesar/intel/oneapi/mpi/2021.5.0//libfabric/bin:/home/cesar/intel/oneapi/mpi/2021.5.0//bin:/home/cesar/intel/oneapi/mkl/2022.0.1/bin/intel64:/home/cesar/intel/oneapi/itac/2021.5.0/bin:/home/cesar/intel/oneapi/inspector/2022.0.0/bin64:/home/cesar/intel/oneapi/dpcpp-ct/2022.0.0/bin:/home/cesar/intel/oneapi/dev-utilities/2021.5.1/bin:/home/cesar/intel/oneapi/debugger/2021.5.0/gdb/intel64/bin:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib/oclfpga/bin:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/bin/intel64:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/bin:/home/cesar/intel/oneapi/clck/2021.5.0/bin/intel64:/home/cesar/intel/oneapi/advisor/2022.0.0/bin64:/home/cesar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+# environment
+MPIRUN = mpiexec
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = pt_BR.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+LINK_FNL_STATIC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limsls_err -limslmpistub -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -Wl,--end-group -liomp5 -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+OCL_ICD_FILENAMES = libintelocl_emu.so:libalteracl.so:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib/x64/libintelocl.so
+# environment
+LC_TIME = pt_BR.UTF-8
+# environment
+LINK_F90_SHARED = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+I_MPI_ROOT = /home/cesar/intel/oneapi/mpi/2021.5.0
+# environment
+LINK_FNL_STATIC_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limsls_err -limslmpistub -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -Wl,--end-group -liomp5 -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+INVOCATION_ID = fadb21e0d3c44c79bf265be9e3e78832
+# environment
+IPP_TARGET_ARCH = intel64
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = cesar
+# environment
+LINK_FNL_IMSL = -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Bdynamic -limsl -limslsuperlu -limslscalar -limslblas_imsl -limsllapack_imsl -limslmpistub -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib
+# environment
+LINK_F90_STATIC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limsls_err -limslmpistub -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -Wl,--end-group -liomp5 -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+GNOME_SETUP_DISPLAY = :1
+# makefile (from 'makefile', line 4)
+FLIBS = -llapack -lblas 
+# environment
+LC_TELEPHONE = pt_BR.UTF-8
+# environment
+LINK_F90_STATIC_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limsls_err -limslmpistub -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -Wl,--end-group -liomp5 -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+FNL_F90_MSG = /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/bin/
+# automatic
+?F = $(notdir $?)
+# environment
+ROGUEWAVE_DIR = /opt/RogueWave
+# environment
+INTELFPGAOCLSDKROOT = /home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib/oclfpga
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+MKLROOT = /home/cesar/intel/oneapi/mkl/2022.0.1
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+LINK_FNL_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LINK_MPI_IMSL = -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslscalar -limsllapack_imsl -limslblas_imsl -limslp_err -Wl,--end-group -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+CPATH = /home/cesar/intel/oneapi/tbb/2021.5.0/env/../include:/home/cesar/intel/oneapi/mpi/2021.5.0//include:/home/cesar/intel/oneapi/mkl/2022.0.1/include:/home/cesar/intel/oneapi/ipp/2021.5.1/include:/home/cesar/intel/oneapi/ippcp/2021.5.0/include:/home/cesar/intel/oneapi/ipp/2021.5.1/include:/home/cesar/intel/oneapi/dpl/2021.6.0/linux/include:/home/cesar/intel/oneapi/dpcpp-ct/2022.0.0/include:/home/cesar/intel/oneapi/dnnl/2022.0.1/cpu_dpcpp_gpu_dpcpp/lib:/home/cesar/intel/oneapi/dev-utilities/2021.5.1/include:/home/cesar/intel/oneapi/ccl/2021.5.0/include/cpu_gpu_dpcpp
+# environment
+LOGNAME = cesar
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+VT_MPI = impi4
+# makefile
+.DEFAULT_GOAL := all
+# environment
+ 
+SYSTEMD_EXEC_PID = 1832
+# environment
+DISPLAY = :0
+# environment
+USER = cesar
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+LIBRARY_PATH = /home/cesar/intel/oneapi/tbb/2021.5.0/env/../lib/intel64/gcc4.8:/home/cesar/intel/oneapi/mpi/2021.5.0//libfabric/lib:/home/cesar/intel/oneapi/mpi/2021.5.0//lib/release:/home/cesar/intel/oneapi/mpi/2021.5.0//lib:/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64:/home/cesar/intel/oneapi/ipp/2021.5.1/lib/intel64:/home/cesar/intel/oneapi/ippcp/2021.5.0/lib/intel64:/home/cesar/intel/oneapi/ipp/2021.5.1/lib/intel64:/home/cesar/intel/oneapi/dnnl/2022.0.1/cpu_dpcpp_gpu_dpcpp/lib:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/compiler/lib/intel64_lin:/home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib:/home/cesar/intel/oneapi/clck/2021.5.0/lib/intel64:/home/cesar/intel/oneapi/ccl/2021.5.0/lib/cpu_gpu_dpcpp
+# default
+MAKE_VERSION := 4.3
+# environment
+LINK_MPI = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_s -limsllapack_vendor -limslblas_vendor -limslp_err -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64 -Wl,--end-group -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+MANAGERPID = 1735
+# environment
+DBUS_STARTER_BUS_TYPE = session
+# environment
+LINK_FNL_SHARED_IMSL = -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Bdynamic -limsl -limslsuperlu -limslscalar -limslblas_imsl -limsllapack_imsl -limslmpistub -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib
+# environment
+LC_MEASUREMENT = pt_BR.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 30554
+# environment
+PYTHONPATH = /home/cesar/intel/oneapi/advisor/2022.0.0/pythonapi
+# environment
+INTEL_LICENSE_FILE = /opt/intel/licenses:/home/cesar/intel/licenses:/home/cesar/intel/oneapi/clck/2021.5.0/licensing:/opt/intel/licenses:/home/cesar/intel/licenses:/Users/Shared/Library/Application Support/Intel/Licenses
+# environment
+_ = /usr/share/code/code
+# environment
+LC_PAPER = pt_BR.UTF-8
+# environment
+LINK_FNL_STATIC_IMSL = -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslscalar -limslblas_imsl -limsllapack_imsl -limsls_err -limslmpistub -Wl,--end-group -Bdynamic
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+APM = /home/cesar/intel/oneapi/advisor/2022.0.0/perfmodels
+# environment
+VT_ADD_LIBS = -ldwarf -lelf -lvtunwind -lm -lpthread
+# environment
+LINK_F90 = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+FNL_COMPILER_VERSION = Intel(R) Fortran Intel(R) 64 Compiler Classic for applications running on Intel(R) 64, Version 2021.2.0 Build 20210228_000000
+# environment
+LC_CTYPE = pt_BR.UTF-8
+# environment
+LINK_F90_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+CPLUS_INCLUDE_PATH = /home/cesar/intel/oneapi/clck/2021.5.0/include
+# environment
+JOURNAL_STREAM = 8:33081
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+LINK_MPIS_IMSL = -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslscalar -limsllapack_imsl -limslblas_imsl -limsls_err -Wl,--end-group -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+GDB_INFO = /home/cesar/intel/oneapi/debugger/2021.5.0/documentation/info/
+# environment
+HOME = /home/cesar
+# environment
+IMSL_DIR = /opt/RogueWave/imsl
+# environment
+QT_IM_MODULE = ibus
+# environment
+BIN_DIR = /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/bin
+# environment
+TBBROOT = /home/cesar/intel/oneapi/tbb/2021.5.0/env/..
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a0e10100-1.68.1-main.sock
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+MATHEMATICA_HOME = /usr/local/Wolfram/Mathematica/12.2
+# environment
+INTEL_PYTHONHOME = /home/cesar/intel/oneapi/debugger/2021.5.0/dep
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+FNL_VERSION = 2021.0.0
+# default
+.RECIPEPREFIX := 
+# environment
+LIB_ARCH = rdh800in212x64
+# environment
+VT_SLIB_DIR = /home/cesar/intel/oneapi/itac/2021.5.0/slib
+# automatic
+<F = $(notdir $<)
+# environment
+FPGA_VARS_DIR = /home/cesar/intel/oneapi/compiler/2022.0.1/linux/lib/oclfpga
+# default
+SUFFIXES := 
+# environment
+LINK_FNL = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+# environment
+FPGA_VARS_ARGS = 
+# environment
+SETVARS_COMPLETED = 1
+# environment
+IPPROOT = /home/cesar/intel/oneapi/ipp/2021.5.1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+F90FLAGS = -qopenmp -axCORE-AVX2 -fp-model precise -I/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/include
+# environment
+ACL_BOARD_VENDOR_PATH = /opt/Intel/OpenCLFPGA/oneAPI/Boards
+# environment
+DNNLROOT = /home/cesar/intel/oneapi/dnnl/2022.0.1/cpu_dpcpp_gpu_dpcpp
+# environment
+ADVISOR_2022_DIR = /home/cesar/intel/oneapi/advisor/2022.0.0
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = pt_BR.UTF-8
+# makefile (from 'makefile', line 3)
+FOPT = -O3
+# variable set hash-table stats:
+# Load=199/1024=19%, Rehash=0, Collisions=33/241=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 64768, inode 18090320): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+modelo_completo.o: main.f90 modelo_completo.f90
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-14 16:51:23.410154371
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 14):
+	$(FC) $(FFLAGS) $(FOPT) $^ -c
+
+# Not a target:
+modelo_completo.f90:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-11 17:30:22.489755157
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+main.f90:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-14 16:51:17.26994917
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: main.o modelo_completo.o
+#  Command line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# * := 
+# automatic
+# < := main.o
+# automatic
+# + := main.o modelo_completo.o
+# automatic
+# % := 
+# automatic
+# ^ := main.o modelo_completo.o
+# automatic
+# ? := main.o modelo_completo.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/16=12%
+#  recipe to execute (from 'makefile', line 12):
+	$(FC) $^ -o $(EXEC) $(FFLAGS) $(FLIBS)
+
+main.o: main.f90 modelo_completo.f90
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-14 16:51:22.602127492
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 14):
+	$(FC) $(FFLAGS) $(FOPT) $^ -c
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-14 16:50:25.944144984
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=0/26=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 21 / storage = 205 B / avg = 9 B
+# current buf: size = 8162 B / used = 205 B / count = 21 / avg = 9 B
+
+# strcache performance: lookups = 36 / hit rate = 41%
+# hash-table stats:
+# Load=21/8192=0%, Rehash=0, Collisions=0/36=0%
+# Finished Make data base on Thu Jul 14 17:23:52 2022
+
+ 
