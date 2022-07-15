@@ -1,7 +1,7 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/cesar/Documents/UFF/estudos/heatflux/welding/src'
+make: Entering directory '/home/cesar/Documents/UFF/estudos/heatflux/welding/src2'
 ifort -g  -O3 main.f90 modelo_completo.f90 -c
 ifort -g  -O3 main.f90 modelo_completo.f90 -c
 ifort main.o modelo_completo.o -o welding -g  -llapack -lblas 
-make: Leaving directory '/home/cesar/Documents/UFF/estudos/heatflux/welding/src'
+make: Leaving directory '/home/cesar/Documents/UFF/estudos/heatflux/welding/src2'
  

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jul 14 17:23:52 2022
+# Make data base, printed on Fri Jul 15 17:43:39 2022
 
 # Variables
 
@@ -28,8 +28,6 @@ CMAKE_PREFIX_PATH = /home/cesar/intel/oneapi/tbb/2021.5.0/env/..:/home/cesar/int
 FFLAGS = -g 
 # environment
 LINK_FNL_SHARED = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8d081771-774a-43b9-be0e-eb2b659008d4.sock
 # environment
 CCL_ROOT = /home/cesar/intel/oneapi/ccl/2021.5.0
 # environment
@@ -63,7 +61,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
 LINK_FNL_SHARED_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
 # environment
-PWD = /home/cesar/Documents/UFF/estudos/heatflux/welding/src
+PWD = /home/cesar/Documents/UFF/estudos/heatflux/welding/src2
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -72,16 +70,14 @@ PS1 = \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/cesar/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = /home/cesar/.config/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.Q2WSO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.30JDP1
 # default
 .LOADED := 
 # default
@@ -95,11 +91,9 @@ PKG_CONFIG_PATH = /home/cesar/intel/oneapi/vtune/2022.0.0/include/pkgconfig/lib6
 # environment
 DPL_ROOT = /home/cesar/intel/oneapi/dpl/2021.6.0
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=10a2bbf18cbde2f8711cca1062cffaf6
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=3e50c50284602f81266bd22e62d18b35
 # makefile
-CURDIR := /home/cesar/Documents/UFF/estudos/heatflux/welding/src
-# environment
-VSCODE_PIPE_LOGGING = true
+CURDIR := /home/cesar/Documents/UFF/estudos/heatflux/welding/src2
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
@@ -127,9 +121,7 @@ LINK_MPIS_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 30554
+VSCODE_PID = 27697
 # environment
 FNL_DIR = /opt/RogueWave/imsl/fnl-2021.0.0
 # environment
@@ -139,7 +131,7 @@ XDG_SESSION_TYPE = wayland
 # environment
 DPCT_BUNDLE_ROOT = /home/cesar/intel/oneapi/dpcpp-ct/2022.0.0
 # environment
-SESSION_MANAGER = local/thinkpad:@/tmp/.ICE-unix/1832,unix/thinkpad:/tmp/.ICE-unix/1832
+SESSION_MANAGER = local/thinkpad:@/tmp/.ICE-unix/1929,unix/thinkpad:/tmp/.ICE-unix/1929
 # automatic
 *F = $(notdir $*)
 # environment
@@ -149,7 +141,7 @@ MANPATH = /home/cesar/intel/oneapi/mpi/2021.5.0/man:/home/cesar/intel/oneapi/ita
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=10a2bbf18cbde2f8711cca1062cffaf6
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=3e50c50284602f81266bd22e62d18b35
 # environment
 INSIDE_NAUTILUS_PYTHON = 
 # environment
@@ -231,11 +223,9 @@ I_MPI_ROOT = /home/cesar/intel/oneapi/mpi/2021.5.0
 # environment
 LINK_FNL_STATIC_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limsls_err -limslmpistub -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -Wl,--end-group -liomp5 -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
 # environment
-INVOCATION_ID = fadb21e0d3c44c79bf265be9e3e78832
+INVOCATION_ID = e16261e0fbd7472f8a83bc097f381645
 # environment
 IPP_TARGET_ARCH = intel64
-# environment
-VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = cesar
 # environment
@@ -274,6 +264,7 @@ DESKTOP_SESSION = ubuntu
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 LINK_FNL_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -shared-intel -limsl -limslsuperlu -limslhpc_l -limsllapack_vendor -limslblas_vendor -limslmpistub -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_lapack95_lp64 -liomp5 -Xlinker -rpath -Xlinker /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
+ 
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -289,8 +280,7 @@ VT_MPI = impi4
 # makefile
 .DEFAULT_GOAL := all
 # environment
- 
-SYSTEMD_EXEC_PID = 1832
+SYSTEMD_EXEC_PID = 1929
 # environment
 DISPLAY = :0
 # environment
@@ -304,7 +294,7 @@ MAKE_VERSION := 4.3
 # environment
 LINK_MPI = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -L/home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64 -Bstatic -Wl,--start-group -limsl -limslsuperlu -limslhpc_s -limsllapack_vendor -limslblas_vendor -limslp_err -Wl,--end-group -Wl,--start-group -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64 -Wl,--end-group -Bdynamic -Xlinker -rpath -Xlinker /home/cesar/intel/oneapi/mkl/2022.0.1/lib/intel64
 # environment
-MANAGERPID = 1735
+MANAGERPID = 1827
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
@@ -312,7 +302,7 @@ LINK_FNL_SHARED_IMSL = -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib -Bd
 # environment
 LC_MEASUREMENT = pt_BR.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 30554
+GIO_LAUNCHED_DESKTOP_FILE_PID = 27697
 # environment
 PYTHONPATH = /home/cesar/intel/oneapi/advisor/2022.0.0/pythonapi
 # environment
@@ -340,7 +330,7 @@ LINK_F90_HPC = -z muldefs -L/opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/lib 
 # environment
 CPLUS_INCLUDE_PATH = /home/cesar/intel/oneapi/clck/2021.5.0/include
 # environment
-JOURNAL_STREAM = 8:33081
+JOURNAL_STREAM = 8:34146
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -360,7 +350,7 @@ BIN_DIR = /opt/RogueWave/imsl/fnl-2021.0.0/rdh800in212x64/bin
 # environment
 TBBROOT = /home/cesar/intel/oneapi/tbb/2021.5.0/env/..
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-a0e10100-1.68.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-a0e10100-1.69.1-main.sock
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
@@ -410,7 +400,7 @@ LC_IDENTIFICATION = pt_BR.UTF-8
 # makefile (from 'makefile', line 3)
 FOPT = -O3
 # variable set hash-table stats:
-# Load=199/1024=19%, Rehash=0, Collisions=33/241=14%
+# Load=194/1024=19%, Rehash=0, Collisions=28/235=12%
 
 # Pattern-specific Variable Values
 
@@ -418,9 +408,9 @@ FOPT = -O3
 
 # Directories
 
-# . (device 64768, inode 18090320): 16 files, no impossibilities.
+# . (device 64768, inode 18092688): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -430,23 +420,22 @@ FOPT = -O3
 
 modelo_completo.o: main.f90 modelo_completo.f90
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-14 16:51:23.410154371
-#  File has been updated.
-#  Successfully updated.
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'makefile', line 14):
 	$(FC) $(FFLAGS) $(FOPT) $^ -c
 
 # Not a target:
 modelo_completo.f90:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-11 17:30:22.489755157
+#  Last modified 2022-07-11 17:30:22.489755
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 main.f90:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-14 16:51:17.26994917
+#  Last modified 2022-07-14 18:42:05.225662
 #  File has been updated.
 #  Successfully updated.
 
@@ -459,43 +448,45 @@ main.f90:
 all: main.o modelo_completo.o
 #  Command line target.
 #  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
-# automatic
-# @ := all
-# automatic
-# * := 
-# automatic
-# < := main.o
-# automatic
-# + := main.o modelo_completo.o
-# automatic
-# % := 
-# automatic
-# ^ := main.o modelo_completo.o
-# automatic
-# ? := main.o modelo_completo.o
-# automatic
-# | := 
 # variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=2/16=12%
+# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 #  recipe to execute (from 'makefile', line 12):
 	$(FC) $^ -o $(EXEC) $(FFLAGS) $(FLIBS)
 
 main.o: main.f90 modelo_completo.f90
 #  Implicit rule search has not been done.
-#  Last modified 2022-07-14 16:51:22.602127492
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-07-14 18:22:52.199207
 #  File has been updated.
-#  Successfully updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.o
+# automatic
+# * := 
+# automatic
+# < := main.f90
+# automatic
+# + := main.f90 modelo_completo.f90
+# automatic
+# % := 
+# automatic
+# ^ := main.f90 modelo_completo.f90
+# automatic
+# ? := main.f90
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=4/15=27%
 #  recipe to execute (from 'makefile', line 14):
 	$(FC) $(FFLAGS) $(FOPT) $^ -c
 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-14 16:50:25.944144984
+#  Last modified 2022-07-14 16:50:25.944144
 #  File has been updated.
 #  Successfully updated.
 
@@ -513,12 +504,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 205 B / avg = 9 B
-# current buf: size = 8162 B / used = 205 B / count = 21 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 210 B / avg = 9 B
+# current buf: size = 8162 B / used = 210 B / count = 22 / avg = 9 B
 
-# strcache performance: lookups = 36 / hit rate = 41%
+# strcache performance: lookups = 37 / hit rate = 40%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=0/36=0%
-# Finished Make data base on Thu Jul 14 17:23:52 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/37=0%
+# Finished Make data base on Fri Jul 15 17:43:39 2022
 
  

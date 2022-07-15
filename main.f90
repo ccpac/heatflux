@@ -1,5 +1,8 @@
 module global
+    !integer,parameter::nx=24,ny=24,nz=6,nt=100,nxy=nx*ny
     integer,parameter::nx=24,ny=24,nz=6,nt=100,nxy=nx*ny
+    integer::pi
+    real(8)::a,b,c
     real(8)::drx,dry,dt
     real(8)::dcx,dcy,dcz
 end module global
@@ -15,7 +18,7 @@ program KF_welding
     real(8),dimension(lwork)::work
     real(8)::tt,x,y,r
     real(8)::r11,r12,r21,r22,rx,ry,rt
-    real(8)::ktr,rhocr,a,b,c,kt,rhoc,Tref,time,cmh,T0,sT,sq,sy
+    real(8)::ktr,rhocr,kt,rhoc,Tref,time,cmh,T0,sT,sq,sy
     real(8),dimension(nxy)::vy,vq,vyp
     real(8),dimension(2*nxy)::vxp,vxm
     real(8),dimension(nxy,nxy)::mR,mInv
@@ -28,11 +31,12 @@ program KF_welding
 ! Problem Data !
 !!!!!!!!!!!!!!!!
 
-    a=0.12d0
-    b=0.12d0
-    c=0.003d0
+    a=200.d-3!0.12d0
+    b=50.d-3!0.12d0
+    c=4.d-3!0.003d0
     time=2.d0
     T0=300.d0
+    pi=dacos(-1.d0)
 
 !!!!!!!!!!!!!!!!!!!!!
 ! Measurement Noise !
@@ -104,7 +108,7 @@ program KF_welding
     close(unit=11)
     close(unit=12)
     deallocate(hT)
-
+stop
 !!!!!!!!!!!!!!!!!!!!
 ! Evolution Matrix !
 !!!!!!!!!!!!!!!!!!!!
@@ -296,6 +300,18 @@ end program
 
 subroutine vqf(vq,it)
     use global
+    integer::it
+    real(8),dimension(nx*ny)::vq
+    !call vqf1(vq,it)
+    call vqf2(vq,it)
+end subroutine
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Modelo da minha dissertação !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+subroutine vqf1(vq,it)
+    use global
     implicit none
     integer::i,j,k,it,i0,i1,j0,j1
     real(8)::tt,x,y
@@ -315,6 +331,41 @@ subroutine vqf(vq,it)
             else
                 vq(k)=0.d0
             endif
+        enddo
+    enddo
+end subroutine
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Modelo Gaussiano Rodrigo !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+subroutine vqf2(vq,it)
+    use global
+    implicit none
+    integer::i,j,k,it
+    real(8)::tt,x,y
+    real(8)::Q,rs,u,x0,y0
+    real(8),dimension(nx*ny)::vq
+    tt=real(it,8)*dt
+    !!!!!!!!!!!!!
+    ! Heat Rate !
+    !!!!!!!!!!!!!
+    Q=500.d0
+    rs=1.8d-1
+    u=0.5d0/60.d0
+    x0=a/10.d0+u*tt
+    y0=b/2.d0
+    !!!!!!!!!!!!!!!!!!!
+    ! Moving Gaussian !
+    !!!!!!!!!!!!!!!!!!!
+    do i=1,nx
+        x=(real(i,8)-0.5d0)*drx
+        do j=1,ny
+            k=i+(j-1)*nx
+            y=(real(j,8)-0.5d0)*dry
+            vq(k)=3.d0*Q/(pi*rs**2.d0)*dexp(&
+                -3.d0*(x-x0)**2.d0/(rs**2.d0)&
+                -3.d0*(y-y0)**2.d0/(rs**2.d0))
         enddo
     enddo
 end subroutine
