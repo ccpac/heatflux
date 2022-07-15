@@ -160,7 +160,7 @@ subroutine modelocompleto(hTold,qest)
                 hTnew(i,j,k)=(ae(i,j,k)*hTnew(i+1,j,k)+ae(i-1,j,k)*hTnew(i-1,j,k)+&
                     an(i,j,k)*hTnew(i,j+1,k)+an(i,j-1,k)*hTnew(i,j-1,k)+&
                     at(i,j,k-1)*hTnew(i,j,k-1)+&
-                    ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+                    ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
             enddo
         enddo
     !!!!!!!!!!!!!!
@@ -213,7 +213,7 @@ subroutine modelocompleto(hTold,qest)
             hTnew(i,j,k)=(ae(i,j,k)*hTnew(i+1,j,k)+&
                 an(i,j,k)*hTnew(i,j+1,k)+an(i,j-1,k)*hTnew(i,j-1,k)+&
                 at(i,j,k-1)*hTnew(i,j,k-1)+&
-                ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+                ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
         enddo
     !!!!!!!!!!!!!!
     !Contorno x=a!
@@ -265,7 +265,7 @@ subroutine modelocompleto(hTold,qest)
             hTnew(i,j,k)=(ae(i-1,j,k)*hTnew(i-1,j,k)+&
                 an(i,j,k)*hTnew(i,j+1,k)+an(i,j-1,k)*hTnew(i,j-1,k)+&
                 at(i,j,k-1)*hTnew(i,j,k-1)+&
-                ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+                ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
         enddo
     !!!!!!!!!!!!!!
     !Contorno y=0!
@@ -291,7 +291,7 @@ subroutine modelocompleto(hTold,qest)
             hTnew(i,j,k)=(ae(i,j,k)*hTnew(i+1,j,k)+ae(i-1,j,k)*hTnew(i-1,j,k)+&
                 an(i,j,k)*hTnew(i,j+1,k)+&
                 at(i,j,k-1)*hTnew(i,j,k-1)+&
-                ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+                ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
         enddo
     !!!!!!!!!!!!!!
     !Contorno y=b!
@@ -317,7 +317,7 @@ subroutine modelocompleto(hTold,qest)
             hTnew(i,j,k)=(ae(i,j,k)*hTnew(i+1,j,k)+ae(i-1,j,k)*hTnew(i-1,j,k)+&
                 an(i,j-1,k)*hTnew(i,j-1,k)+&
                 at(i,j,k-1)*hTnew(i,j,k-1)+&
-                ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+                ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
         enddo
     !!!!!!!!!!!!!!
     !Contorno x=0!
@@ -344,7 +344,7 @@ subroutine modelocompleto(hTold,qest)
         hTnew(i,j,k)=(ae(i,j,k)*hTnew(i+1,j,k)+&
             an(i,j,k)*hTnew(i,j+1,k)+&
             at(i,j,k-1)*hTnew(i,j,k-1)+&
-            ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+            ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
     !!!!!!!!!!!!!!
     !Contorno x=0!
     !		  y=b!
@@ -370,7 +370,7 @@ subroutine modelocompleto(hTold,qest)
         hTnew(i,j,k)=(ae(i,j,k)*hTnew(i+1,j,k)+&
             an(i,j-1,k)*hTnew(i,j-1,k)+&
             at(i,j,k-1)*hTnew(i,j,k-1)+&
-            ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+            ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
     !!!!!!!!!!!!!!
     !Contorno x=a!
     !		  y=0!
@@ -396,7 +396,7 @@ subroutine modelocompleto(hTold,qest)
         hTnew(i,j,k)=(ae(i-1,j,k)*hTnew(i-1,j,k)+&
             an(i,j,k)*hTnew(i,j+1,k)+&
             at(i,j,k-1)*hTnew(i,j,k-1)+&
-            ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+            ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
     !!!!!!!!!!!!!!
     !Contorno x=a!
     !		  y=b!
@@ -422,7 +422,7 @@ subroutine modelocompleto(hTold,qest)
         hTnew(i,j,k)=(ae(i-1,j,k)*hTnew(i-1,j,k)+&
             an(i,j-1,k)*hTnew(i,j-1,k)+&
             at(i,j,k-1)*hTnew(i,j,k-1)+&
-            ap0(i,j,k)*hTold(i,j,k)+qest(ny*(i-1)+j)*dcx*dcy)/ap(i,j,k)
+            ap0(i,j,k)*hTold(i,j,k)+qest(i+(j-1)*nx)*dcx*dcy)/ap(i,j,k)
     !!!!!!!!!!!!!!!!!!!!!!!
     !Teste da Converg�ncia!
     !!!!!!!!!!!!!!!!!!!!!!!

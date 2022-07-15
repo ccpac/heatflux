@@ -1,7 +1,7 @@
 module global
     !integer,parameter::nx=24,ny=24,nz=6,nt=100,nxy=nx*ny
     integer,parameter::nx=24,ny=24,nz=6,nt=100,nxy=nx*ny
-    integer::pi
+    real(8)::pi
     real(8)::a,b,c
     real(8)::drx,dry,dt
     real(8)::dcx,dcy,dcz
