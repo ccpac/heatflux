@@ -351,7 +351,7 @@ subroutine vqf2(vq,it)
     ! Heat Rate !
     !!!!!!!!!!!!!
     Q=500.d0
-    rs=1.8d-1
+    rs=1.8d-3
     u=0.5d0/60.d0
     x0=a/10.d0+u*tt
     y0=b/2.d0
